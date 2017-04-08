@@ -94,7 +94,7 @@ function [files, metadata] = tracker_evaluate(tracker, sequence, directory, vara
             print_text('Repetition %d', i);
 
             context.repetition = i;
-                    
+
             [trajectory, time] = tracker.run(tracker, sequence, context);        
             
             print_indent(-1);

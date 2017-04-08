@@ -1,0 +1,17 @@
+TRAX_BOUNDED_OVERLAP: true 
+TRAX_REGION_LEGACY: false 
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.8.0 locally
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/raid/hustxly/VOT/VOT-Tracker/workspace_DKCF/DeepKCF/DeepKCF_VOT.py", line 25, in <module>
+    from tracker import Tracker
+  File "/raid/hustxly/VOT/VOT-Tracker/workspace_DKCF/DeepKCF/tracker.py", line 312
+    self.init_fn = slim.assign_from_checkpoint_fn('/raid/hustxly/KCF_CNN'), slim.get_model_variables('InceptionV3'))
+                                                                                                                   ^
+SyntaxError: invalid syntax
+Error: Unable to establish connection.
+Tracker exited (exit code 1)

@@ -1,0 +1,10 @@
+toolkit.version=4.0
+tracker.identifier=DeepKCF
+tracker.protocol=trax
+tracker.interpreter=python
+timestamp=2017-04-08 17:36:19
+platform=GLNXA64
+platform.maxsize=281474976710655.000000
+platform.endian=L
+environment=matlab
+environment.version=8.6.0.267246 (R2015b)

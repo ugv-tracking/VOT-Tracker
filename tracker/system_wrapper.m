@@ -162,7 +162,7 @@ try
 
 		% Save library paths
 		library_path = getenv(library_var);
-
+        
         % Make Matlab use system libraries
         if ~isempty(tracker.linkpath)
             userpath = tracker.linkpath{end};
@@ -173,7 +173,7 @@ try
         else
 		    setenv(library_var, getenv('PATH'));
         end;
-
+        
 		if verLessThan('matlab', '7.14.0')
 		    tic;
 		    [status, output] = system(tracker.command);
