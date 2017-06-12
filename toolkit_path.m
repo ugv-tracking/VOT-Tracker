@@ -9,16 +9,17 @@ function paths = toolkit_path()
 
 script_directory = fileparts(mfilename('fullpath'));
 include_dirs = cellfun(@(x) fullfile(script_directory, x), {'', 'utilities', ...
-    'workspace_DKCF', 'tracker', 'sequence', 'stacks' ,'report', 'analysis', ...
-    'sequence/clustering'}, 'UniformOutput', false); 
+    'workspace', 'tracker', 'sequence', 'stacks' ,'report', 'analysis', ...
+    'sequence/clustering', 'experiment'}, 'UniformOutput', false); 
 
 if exist(fullfile(script_directory, 'native'), 'dir')
    include_dirs{end+1} = fullfile(script_directory, 'native');
 end
 
-include_dirs{3}
 if nargout > 0
     paths = include_dirs;
 else
     addpath(include_dirs{:});
 end;
+
+
