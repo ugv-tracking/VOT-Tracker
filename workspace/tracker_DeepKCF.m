@@ -14,7 +14,7 @@ tracker_label = ['DeepKCF'];
 % script of your tracker (not the .py file but just the name of the script) and also provide the
 % path (or multiple paths) where the tracker sources % are found as the elements of the cell
 % array (second argument).
-tracker_command = generate_python_command('DeepKCF_VOT', {'/raid/hustxly/VOT/VOT-Tracker/workspace_DKCF/DeepKCF/'});
+tracker_command = generate_python_command('DeepKCF_VOT', {'/raid/hustxly/VOT/VOT-Tracker/workspace/DeepKCF/'});
 
 tracker_interpreter = 'python';
 
